@@ -1,0 +1,457 @@
+@media (max-height: 576px) {
+  .header__top {
+    padding-top: 15px;
+  }
+
+  .header__container {
+    padding-top: 68px;
+    padding-bottom: 15px;
+  }
+
+  .header__title {
+    font-size: 28px;
+    max-width: 545px;
+  }
+
+  .header__title span {
+    font-size: 48px;
+  }
+
+  .header__scroll {
+    font-size: 16px;
+  }
+
+  .header__scroll::after {
+    width: 23px;
+    margin-top: 2px;
+  }
+}
+
+@media (max-width: 1200px) {
+
+  .about,
+  .skills,
+  .service,
+  .review,
+  .stats {
+    padding: 100px 0;
+  }
+
+  .works__content {
+    margin-left: -15px;
+    margin-bottom: 15px;
+  }
+
+  .works__item {
+    margin-left: 15px;
+    margin-bottom: 15px;
+    width: calc(100% / 3 - 15px);
+  }
+
+  .stats__item::before {
+    height: 60px;
+  }
+
+  .contacts {
+    padding-bottom: 100px;
+  }
+
+  .contacts__inner {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .title {
+    margin-bottom: 30px;
+  }
+
+  .logo {
+    flex: 0 0 110px;
+  }
+
+  .header__top {
+    padding-top: 15px;
+  }
+
+  .header__top.scrolled {
+    padding: 15px 0 7px;
+  }
+
+  .header__nav {
+    align-items: flex-start;
+  }
+
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 44px;
+    height: 44px;
+  }
+
+  .burger__line,
+  .header__burger:before,
+  .header__burger::after {
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    right: 0;
+    transition: top 0.3s ease, bottom 0.3s ease, transform 0.3s ease;
+    z-index: 2;
+  }
+
+  .burger__line {
+    top: calc(50% - 7px);
+  }
+
+  .header__burger:before {
+    top: 5px;
+  }
+
+  .header__burger::after {
+    bottom: 17px;
+  }
+
+  .header__burger.active .burger__line {
+    display: none;
+  }
+
+  .header__burger.active:before {
+    transform: rotate(45deg);
+    top: 16px;
+  }
+
+  .header__burger.active:after {
+    transform: rotate(-45deg);
+    bottom: 26px;
+  }
+
+  .header__list {
+    position: fixed;
+    top: -200%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #7792E0;
+    z-index: 1;
+    display: block;
+    text-align: center;
+    padding-top: 80px;
+    transition: top 0.3s ease;
+  }
+
+  .header__list.active {
+    top: 0;
+    overflow: auto;
+  }
+
+  .header__item:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .header__link {
+    display: block;
+    padding: 11px 0;
+    text-decoration: none;
+  }
+
+  .header__link:active {
+    background-color: rgba(35, 82, 222, 0.7);
+  }
+
+  .header__container {
+    padding-top: 59px;
+    padding-bottom: 15px;
+  }
+
+  .about,
+  .skills,
+  .service,
+  .review,
+  .stats {
+    padding: 70px 0;
+  }
+
+  .skills__inner {
+    padding: 0 23px;
+  }
+
+  .skills__img {
+    max-width: 300px;
+  }
+
+  .skills__item:not(:last-child) {
+    margin-bottom: 60px;
+  }
+
+  .works {
+    padding-bottom: 70px;
+  }
+
+  .works__filter {
+    margin-bottom: 30px;
+  }
+
+  .stats__item {
+    padding: 25px 15px;
+  }
+
+  .stats__item::before {
+    height: 50px;
+  }
+
+  .stats__works {
+    font-size: 14px;
+  }
+
+  .stats__work-num {
+    font-size: 30px;
+  }
+
+  .contacts {
+    padding-bottom: 70px;
+  }
+
+  .form__items {
+    display: block;
+  }
+
+  .form__item:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .form__item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  .title::after {
+    height: 10px;
+  }
+
+  .header__title {
+    max-width: 345px;
+    font-size: 28px;
+  }
+
+  .header__title span {
+    font-size: 40px;
+  }
+
+  .header__scroll {
+    font-size: 14px;
+  }
+
+  .about,
+  .skills,
+  .service,
+  .review {
+    padding: 50px 0;
+  }
+
+  .about__text {
+    font-size: 16px;
+  }
+
+  .about__text p:not(:last-child) {
+    margin-bottom: 22px;
+  }
+
+  .skills__inner {
+    display: block;
+  }
+
+  .skills__img {
+    margin: 0 auto 30px;
+  }
+
+  .skills__item {
+    display: block;
+  }
+
+  .skills__item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  .skills__name {
+    margin-right: 0px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  .skills__img {
+    max-width: 415px;
+  }
+
+  .skills__list {
+    max-width: 100%;
+  }
+
+  .skills__line {
+    max-width: 100%;
+  }
+
+  .service__item::before {
+    margin-bottom: 10px;
+    height: 40px;
+    width: 40px;
+  }
+
+  .service__name {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .works {
+    padding: 15px 0 50px;
+  }
+
+  .works__filter {
+    display: block;
+  }
+
+  .filter__item {
+    font-size: 18px;
+  }
+
+  .filter__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .filter__btn {
+    font-size: 18px;
+  }
+
+  .review__clients {
+    display: block;
+    position: relative;
+  }
+
+  .review__client {
+    max-width: 100%;
+    padding: 0 30px;
+  }
+
+  .review__img {
+    margin: 0 auto 30px;
+  }
+
+  .review__author {
+    font-size: 20px;
+  }
+
+  .review__text {
+    font-size: 16px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .review__link {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 90px;
+    right: calc(50% - 80px);
+  }
+
+  .review__link::before {
+    border-radius: 50%;
+  }
+
+  .review__link::after {
+    border-width: 10px 0 10px 20px;
+  }
+
+  .stats {
+    padding: 50px 0 35px;
+  }
+
+  .stats__item {
+    width: calc(100% / 2 - (15px / 2));
+    margin-bottom: 15px
+  }
+
+  .stats__item::before {
+    height: 36px;
+    margin-bottom: 7px;
+  }
+
+  .stats__works {
+    margin-bottom: 8px;
+  }
+
+  .contacts {
+    padding-bottom: 55px;
+    text-align: center;
+  }
+
+  .contacts__wrapper {
+    display: block;
+    text-align: left;
+  }
+  
+  .contacts__inner {
+    max-width: 100%;
+    margin-bottom: 32px;
+    margin-right: 0;
+  }
+
+  .contacts__form {
+    max-width: 100%;
+  }
+
+  .contacts__items {
+    margin-bottom: 30px;
+  }
+
+  .form__item {
+    margin-bottom: 15px;
+  }
+
+  .form__field {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about,
+  .skills,
+  .service {
+    text-align: center;
+  }
+
+  .about__text p {
+    text-align: left;
+  }
+
+  .service__items {
+    display: block;
+  }
+
+  .service__item {
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .service__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .works__item {
+    width: calc(100% / 2 - 15px);
+  }
+
+  .footer {
+    padding: 30px 0;
+  }
+}
